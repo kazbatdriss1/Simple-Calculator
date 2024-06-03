@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <form action="/" method="POST">
+            <input type="number" name="value1" placeholder="Enter first value" required>
+            <input type="number" name="value2" placeholder="Enter second value" required>
+            <button type="submit">Calculate</button>
+        </form>
+        {{if .Result}}
+        <h2>Result: {{.Result}}</h2>
+        {{end}}
+    </div>
+</body>
+</html>
